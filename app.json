@@ -1,28 +1,53 @@
 {
   "expo": {
     "name": "ClipCatch",
-    "slug": "ClipCatch",
+    "slug": "clipcatch",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIFileSharingEnabled": true,
+        "LSSupportsOpeningDocumentsInPlace": true,
+        "NSPhotoLibraryUsageDescription": "This app needs access to save downloaded videos to your photo library.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs access to save downloaded videos to your photo library."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "INTERNET",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "package": "com.yourusername.clipcatch"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-file-system",
+        {
+          "ios": {
+            "userInterfaceStylesIOS": "light"
+          }
+        }
+      ]
+    ],
+    "newArchEnabled": true
   }
 }
