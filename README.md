@@ -13,17 +13,27 @@ ClipCatch is a mobile application for downloading and managing YouTube videos, b
 
 ## Tech Stack
 
-- **React Native**: Cross-platform mobile framework
-- **Expo**: Development platform for React Native
-- **TypeScript**: Static typing for JavaScript
-- **React Native Paper**: Material Design components
-- **Expo File System**: File handling capabilities
-- **Expo Media Library**: Access to device media storage
-- **Expo AV**: Audio/video playback
-- **Expo Video Thumbnails**: Generate video thumbnails
-- **Expo Sharing**: Share content with other apps
-- **React Native YTDL**: YouTube download functionality
-- **AsyncStorage**: Local storage for video metadata
+### Core Technologies
+* **React Native** - Cross-platform mobile framework
+* **Expo** - Development platform for React Native
+* **TypeScript** - Static typing for JavaScript
+
+### UI Components
+* **React Native Paper** - Material Design component library
+* **React Native Safe Area Context** - Handles safe area insets
+
+### Expo Modules
+* **File System** - File handling and storage operations
+* **Media Library** - Access to device media storage
+* **AV** - Audio/video playback capabilities
+* **Video Thumbnails** - Generate preview images from videos
+* **Sharing** - Share content with other applications
+* **Status Bar** - Control app status bar appearance
+
+### Data Management
+* **AsyncStorage** - Persistent local storage
+* **React Native YTDL** - YouTube download functionality
+* **YouTubei.js** - YouTube API client
 
 ## Project Structure
 
